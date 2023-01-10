@@ -1,0 +1,24 @@
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+
+$fontFamily: 'Overpass', sans-serif;
+
+@mixin headingLarge {
+ color: $white;
+ font-style: normal;
+ font-weight: 700;
+ font-size: 28px;
+ line-height: 35px;
+}
+
+@mixin body {
+ color: $lightGrey;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 15px;
+ line-height: 24px;
+}
