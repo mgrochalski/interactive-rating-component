@@ -1,0 +1,43 @@
+@import "src/variables.scss";
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img {
+  margin-top: 13px;
+  margin-bottom: 32px;
+}
+
+.box {
+  background-color: $darkBlue;
+  color: $orange;
+  border-radius: 22.5px;
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  width: 193px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+ @include headingLarge;
+  margin-top: 32px;
+  margin-bottom: 0;
+
+}
+
+.body {
+  @include body;
+  margin-top: 7px;
+  text-align: center;
+}

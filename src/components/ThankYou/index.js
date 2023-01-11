@@ -1,14 +1,17 @@
-import './ThankYou.module.scss'
+import styles from './ThankYou.module.scss'
+import Card from "src/components/Card";
+import ThankYouImg from "src/images/illustration-thank-you.svg"
 
-const ThankYou = () => (
-    <div>
-        You selected  out of 5
+const ThankYou = ({number}) => (
+    <Card className={styles.center}>
+        <img src={ThankYouImg} className={styles.img} alt="Thank You"/>
+            <div className={styles.box}>You selected {number} out of 5</div>
 
-        Thank you!
+        <p className={styles.header}>Thank you!</p>
 
-        We appreciate you taking the time to give a rating. If you ever need more support,
-        don’t hesitate to get in touch!
-    </div>
+        <p className={styles.body}>We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!</p>
+    </Card>
 )
 
 export default ThankYou;

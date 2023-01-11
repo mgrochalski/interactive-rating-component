@@ -13,7 +13,7 @@ const InteractiveRating = () => {
                     setRating(rating)
                 }}/>
                 :
-                <ThankYou/>
+                <ThankYou number={rating}/>
             }
         </div>
     )
