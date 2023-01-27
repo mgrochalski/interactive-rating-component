@@ -1,0 +1,21 @@
+@import "src/variables.scss";
+
+.rating {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  margin-bottom: 32px;
+}
+
+.header {
+  @include headingLarge;
+  padding-top: 30px;
+  margin: 0;
+}
+
+.body {
+  @include body;
+  padding-top: 15px;
+  margin: 0;
+}

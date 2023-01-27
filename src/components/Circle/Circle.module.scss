@@ -1,0 +1,45 @@
+@import "src/variables.scss";
+
+@mixin main {
+  width: 51px;
+  height: 51px;
+  border-radius: 100%;
+
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.default {
+  @include main;
+
+  background-color: $darkBlue;
+  color: $mediumGrey;
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
+
+}
+
+.active {
+  @include main;
+
+  background-color: $mediumGrey;
+  color: $white;
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
+}
